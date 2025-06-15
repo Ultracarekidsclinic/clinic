@@ -1,142 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ULTRACARE DIAGNOSTICS & KIDS CARE CLINIC</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .hero {
-      background-color: #f8f9fa;
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    .hero img {
-      max-width: 200px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-    }
-    .services-icon {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ULTRACARE DIAGNOSTICS & KIDS CARE CLINIC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #007bff; /* A standard blue for medical themes */
+            --secondary-color: #6c757d; /* Grey for supporting text */
+            --light-bg: #f8f9fa;
+            --dark-bg: #343a40;
+            --text-color: #212529;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: var(--text-color);
+        }
+
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,.05);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color) !important;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: var(--text-color) !important;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.7)), url('https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/clinicphoto.webp');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            text-align: center;
+            padding: 6rem 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.3); /* Dark overlay for better text readability */
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        .section-heading {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        .about-us img {
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,.1);
+            object-fit: cover;
+        }
+
+        .doctor-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%; /* Ensure cards are same height */
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,.12);
+        }
+
+        .doctor-card img {
+            border-radius: 50%;
+            border: 4px solid var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .doctor-card h5 {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .doctor-card p {
+            font-size: 0.95rem;
+            color: var(--secondary-color);
+        }
+
+        .services-item {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%; /* Ensure items are same height */
+        }
+
+        .services-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,.12);
+        }
+
+        .services-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .services-item h5 {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.75rem;
+        }
+
+        .contact-info strong {
+            color: var(--primary-color);
+        }
+
+        .map-container {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,.1);
+            height: 450px; /* Consistent map height */
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        footer {
+            background-color: var(--dark-bg);
+            color: var(--white);
+            padding: 2rem 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .section-heading {
+                font-size: 2rem;
+            }
+            .doctor-card, .services-item {
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">UltraCare Diagnostics & Kids Clinic</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section class="hero">
-    <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/clinicphoto.webp" alt="Doctor Photo">
-    <h1>Welcome to Ultracare Diagnostics and Kids Clinic</h1>
-    <p>Your trusted family healthcare provider</p>
-  </section>
-
-  <section id="about" class="container py-5">
-    <h2 class="text-center mb-4">About Us</h2>
-    <div class="row">
-      <div class="col-md-6 text-center">
-        <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/drsaab.jpg" alt="Doctor Photo" width="300" height="300" />
-        <h5>Dr. Arun Kr Singh</h5>
-        <p>MBBS , DCH (Child specialist), Consultation Pediatrician and Neonatologist</p>
-      </div>
-      <div class="col-md-6 text-center">
-        <<img src="./mam.jpg"  alt="Wife Photo" width="300" height ="300"/>
-        <h5>Dr. Banashree</h5>
-        <p> MBBS , MD (RADIODIAGNOSIS )</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="services" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Our Services</h2>
-      <div class="row">
-        <div class="col-md-4 text-center">
-          <div class="services-icon">🩺</div>
-          <h5>OPD Consultation</h5>
-          <p>Comprehensive health consultations.</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">ULTRACARE DIAGNOSTICS & KIDS CLINIC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#doctors">Our Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="col-md-4 text-center">
-          <div class="services-icon">🦷</div>
-          <h5>Vaccination</h5>
-          <p>Protecting tiny lives, one vaccine at a time.</p>
-        </div>
-        <div class="col-md-4 text-center">
-          <div class="services-icon">💉</div>
-          <h5>Nebulization</h5>
-          <p>Routine immunizations for children and adults.</p>
-        </div>
-        <div class="col-md-4 text-center mt-4">
-          <div class="services-icon">🩸</div>
-          <h5>Newborn Care</h5>
-          <p>Nurturing every heartbeat, from the very first.</p>
-        </div>
-        <div class="col-md-4 text-center mt-4">
-          <div class="services-icon">🧘</div>
-          <h5>Nutrition</h5>
-          <p>Lifestyle, nutrition, and chronic disease management guidance.</p>
-        </div>
-        <div class="col-md-4 text-center mt-4">
-          <div class="services-icon">🫁</div>
-          <h5>Blood Tests with Max Lab</h5>
-          <p>Comprehensive blood work for complete clinical clarity.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <section id="contact" class="container py-5">
-    <h2 class="text-center mb-4">Contact Us</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name">
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email">
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="4"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-      </div>
-      <div class="col-md-6">
-        <h5>Clinic Address</h5>
-        <p>UltraCare Diagnostics & Kids Clinic,Sector 149,Noida, India</p>
-        <h5>Phone</h5>
-        <p>+91-7838923367</p>
-        <h5>Email</h5>
-        <p>contact@clinic.com</p>
-        <h5>Map</h5>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.463970864126!2d77.4760882745019!3d28.435426893005943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc18a7924fd5d%3A0xf2133ab352f4d7ef!2sUltracare%20Diagnostics%20and%20Kids%20Clinic!5e0!3m2!1sen!2sin!4v1748691165856!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       
-      </div>
-    </div>
-  </section>
+    <section class="hero d-flex align-items-center justify-content-center">
+        <div>
+            <h1>Your Trusted Partner in Health and Wellness</h1>
+            <p>Providing compassionate and comprehensive care for your family.</p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-3">Book an Appointment</a>
+        </div>
+    </section>
 
-  <footer class="text-center py-3 bg-dark text-white">
-    &copy; 2025 Ultracare Diagnostics & Kids Clinic. All rights reserved.
-  </footer>
+    ---
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <section id="about" class="container py-5">
+        <h2 class="text-center section-heading">About Our Clinic</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6 order-md-2 text-center mb-4 mb-md-0">
+                <img src="https://via.placeholder.com/600x400?text=Clinic+Interior" alt="Clinic Interior" class="img-fluid about-us-img" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,.1);">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h3>Dedicated to Your Family's Health</h3>
+                <p>At UltraCare Diagnostics & Kids Clinic, we are committed to providing exceptional healthcare services with a focus on both advanced diagnostics and specialized pediatric care. Our clinic is built on the principles of compassion, precision, and patient-centric care, ensuring a comfortable and trustworthy environment for every visit.</p>
+                <p>We understand the unique needs of growing families and offer a holistic approach to health, from routine check-ups and vaccinations for children to comprehensive diagnostic services for all ages. Our team of experienced medical professionals uses the latest technologies and practices to deliver accurate results and effective treatments.</p>
+                <a href="#services" class="btn btn-outline-primary mt-3">Explore Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    ---
+
+    <section id="doctors" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center section-heading">Meet Our Expert Doctors</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-5 col-lg-4">
+                    <div class="doctor-card text-center">
+                        <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/drsaab.jpg" alt="Dr. Arun Kr Singh" width="150" height="150" />
+                        <h5>Dr. Arun Kr Singh</h5>
+                        <p class="text-muted">MBBS, DCH (Child Specialist)</p>
+                        <p>Consultation Pediatrician and Neonatologist with years of experience in nurturing child health and development.</p>
+                        <a href="#contact" class="btn btn-sm btn-outline-primary mt-2">Book Appointment</a>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="doctor-card text-center">
+                        <img src="https://via.placeholder.com/150x150?text=Dr.+Banashree" alt="Dr. Banashree" width="150" height="150" />
+                        <h5>Dr. Banashree</h5>
+                        <p class="text-muted">MBBS, MD (Radiodiagnosis)</p>
+                        <p>Specializing in advanced diagnostic imaging, providing accurate and timely reports for effective treatment.</p>
+                        <a href="#contact" class="btn btn-sm btn-outline-primary mt-2">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    ---
+
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-heading">Our Comprehensive Services</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-stethoscope"></i></div>
+                        <h5>OPD Consultation</h5>
+                        <p>Comprehensive health consultations for general ailments and specialized care needs.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-syringe"></i></div>
+                        <h5>Vaccination & Immunization</h5>
+                        <p>Protecting tiny lives and ensuring family health with routine immunizations and specialized vaccines.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-lungs"></i></div>
+                        <h5>Nebulization Therapy</h5>
+                        <p>Effective respiratory treatment for conditions like asthma and bronchitis, ensuring clear breathing.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-baby"></i></div>
+                        <h5>Newborn & Infant Care</h5>
+                        <p>Nurturing every heartbeat from the very first, providing expert care and guidance for new parents.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-apple-alt"></i></div>
+                        <h5>Nutrition & Lifestyle Guidance</h5>
+                        <p>Personalized advice on healthy living, balanced nutrition, and chronic disease management.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-flask"></i></div>
+                        <h5>Advanced Blood Tests (Max Lab)</h5>
+                        <p>Comprehensive blood work for complete clinical clarity, partnered with Max Lab for accurate diagnostics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    ---
+
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center section-heading">Get in Touch With Us</h2>
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h4 class="mb-4 text-primary">Send Us a Message</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number (Optional)</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="+91-XXXXXXXXXX">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6 contact-info">
+                    <h4 class="mb-4 text-primary">Clinic Information</h4>
+                    <p><i class="fas fa-map-marker-alt me-2 text-primary"></i> <strong>Address:</strong> UltraCare Diagnostics & Kids Clinic, Sector 149, Noida, India</p>
+                    <p><i class="fas fa-phone me-2 text-primary"></i> <strong>Phone:</strong> <a href="tel:+917838923367" class="text-decoration-none text-dark">+91-7838923367</a></p>
+                    <p><i class="fas fa-envelope me-2 text-primary"></i> <strong>Email:</strong> <a href="mailto:contact@clinic.com" class="text-decoration-none text-dark">contact@clinic.com</a></p>
+                    <p><i class="fas fa-clock me-2 text-primary"></i> <strong>Clinic Hours:</strong></p>
+                    <ul>
+                        <li>Mon - Fri: 9:00 AM - 7:00 PM</li>
+                        <li>Sat: 10:00 AM - 4:00 PM</li>
+                        <li>Sun: Closed</li>
+                    </ul>
+
+                    <h5 class="mt-4 mb-3 text-primary">Find Us on the Map</h5>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.741695276332!2d77.4093959149028!3d28.4891465824908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfbb1b8022a1f%3A0x7d0a2f7c0a9b8f1c!2sSector%20149%2C%20Noida%2C%20Uttar%20Pradesh%20201308!5e0!3m2!1sen!2sin!4v1678912345678!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 UltraCare Diagnostics & Kids Clinic. All rights reserved.</p>
+            <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by [Your Name/Company Name]</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
