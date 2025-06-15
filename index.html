@@ -2,139 +2,122 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ULTRACARE DIAGNOSTICS & KIDS CARE CLINIC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UltraCare Diagnostics & Kids Clinic – Sector 149 Noida</title>
+  <meta name="description" content="UltraCare Diagnostics & Kids Clinic – Pediatrics, Radiology, Vaccination in Sector 149 Noida.">
+  <meta name="keywords" content="UltraCare Diagnostics, Kids Clinic, Radiology Sector 149 Noida, Pediatrician, Vaccination">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    .hero {
-      background-color: #f8f9fa;
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    .hero img {
-      max-width: 200px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-    }
-    .services-icon {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
+    body { font-family:'Segoe UI',sans-serif; margin:0; padding:0; }
+    header.navbar { box-shadow:0 2px 4px rgba(0,0,0,0.1); }
+    .btn-primary { background:#0d6efd; border:none; padding:0.8rem 1.5rem; }
+    .hero-cta { margin-top:1rem; }
+    .hero { background:url('https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/Clinic_photo_1.jpg') center center / contain no-repeat #e9ecef; height:400px; display:flex; align-items:center; justify-content:center; text-align:center; }
+    .hero h1 { font-size:2.25rem; color:#0d6efd; }
+    .hero p { font-size:1.1rem; }
+    .info-section { padding:3rem 0; }
+    .info-card { background:#f8f9fa; border-radius:10px; padding:1.5rem; text-align:center; transition:box-shadow .3s; }
+    .info-card:hover { box-shadow:0 6px 20px rgba(0,0,0,0.1); }
+    .footer { background:#0d6efd; color:white; padding:1rem; text-align:center; }
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">UltraCare Diagnostics & Kids Clinic</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container py-2">
+      <a class="navbar-brand fw-bold text-primary" href="#">UltraCare Clinic</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <a href="tel:+917838923367" class="btn btn-primary ms-lg-3">Call Now</a>
       </div>
     </div>
   </nav>
 
+  <!-- Hero -->
   <section class="hero">
-    <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/clinicphoto.webp" alt="Doctor Photo">
-    <h1>Welcome to Ultracare Diagnostics and Kids Clinic</h1>
-    <p>Your trusted family healthcare provider</p>
+    <div>
+      <h1>UltraCare Diagnostics & Kids Clinic</h1>
+      <p>Advanced Pediatric & Diagnostic Care in Sector 149 Noida</p>
+      <a href="tel:+917838923367" class="btn btn-primary hero-cta">Book an Appointment</a>
+    </div>
   </section>
 
-  <section id="about" class="container py-5">
-    <h2 class="text-center mb-4">About Us</h2>
-    <div class="row">
-      <div class="col-md-6 text-center">
-        <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/drsaab.jpg" alt="Doctor Photo" width="300" height="300" />
-        <h5>Dr. Arun Kr Singh</h5>
-        <p>MBBS , DCH (Child specialist), Consultation Pediatrician and Neonatologist</p>
+  <!-- About -->
+  <section class="info-section container" id="about">
+    <h2 class="text-center mb-4">Meet Our Experts</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="info-card">
+          <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/main/drsaab.jpg" alt="Dr. Arun Kumar Singh" class="img-fluid rounded-circle mb-3" width="150" height="150">
+          <h5 class="fw-bold">Dr. Arun Kumar Singh</h5>
+          <p>MBBS, DCH – Pediatrician & Neonatologist</p>
+          <p>Formerly at Cloudnine Hospital Noida, Safdarjung Hospital Delhi, Pratiksha Hospital Guwahati & ESI Hospital Noida.</p>
+        </div>
       </div>
-      <div class="col-md-6 text-center">
-        <<img src="./mam.jpg"  alt="Wife Photo" width="300" height ="300"/>
-        <h5>Dr. Banashree</h5>
-        <p> MBBS , MD (RADIODIAGNOSIS )</p>
+      <div class="col-md-6">
+        <div class="info-card">
+          <img src="./mam.jpg" alt="Dr. Banashree" class="img-fluid rounded-circle mb-3" width="150" height="150">
+          <h5 class="fw-bold">Dr. Banashree</h5>
+          <p>MBBS, MD – Radiodiagnosis</p>
+          <p>Expert in ultrasound, X-ray & pediatric imaging at Sector 149 Noida clinic.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="services" class="bg-light py-5">
+  <!-- Services -->
+  <section class="info-section bg-light">
     <div class="container">
       <h2 class="text-center mb-4">Our Services</h2>
-      <div class="row">
-        <div class="col-md-4 text-center">
-          <div class="services-icon">🩺</div>
-          <h5>OPD Consultation</h5>
-          <p>Comprehensive health consultations.</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="info-card">
+            <div class="service-icon">🩺</div>
+            <h6>OPD Consultation</h6>
+          </div>
         </div>
-        <div class="col-md-4 text-center">
-          <div class="services-icon">🦷</div>
-          <h5>Vaccination</h5>
-          <p>Protecting tiny lives, one vaccine at a time.</p>
+        <div class="col-md-4">
+          <div class="info-card">
+            <div class="service-icon">💉</div>
+            <h6>Vaccination</h6>
+          </div>
         </div>
-        <div class="col-md-4 text-center">
-          <div class="services-icon">💉</div>
-          <h5>Nebulization</h5>
-          <p>Routine immunizations for children and adults.</p>
+        <div class="col-md-4">
+          <div class="info-card">
+            <div class="service-icon">🫁</div>
+            <h6>Nebulization</h6>
+          </div>
         </div>
-        <div class="col-md-4 text-center mt-4">
-          <div class="services-icon">🩸</div>
-          <h5>Newborn Care</h5>
-          <p>Nurturing every heartbeat, from the very first.</p>
+        <div class="col-md-4">
+          <div class="info-card">
+            <div class="service-icon">🩸</div>
+            <h6>Blood Tests (Max Lab)</h6>
+          </div>
         </div>
-        <div class="col-md-4 text-center mt-4">
-          <div class="services-icon">🧘</div>
-          <h5>Nutrition</h5>
-          <p>Lifestyle, nutrition, and chronic disease management guidance.</p>
+        <div class="col-md-4">
+          <div class="info-card">
+            <div class="service-icon">🍼</div>
+            <h6>Newborn Care</h6>
+          </div>
         </div>
-        <div class="col-md-4 text-center mt-4">
-          <div class="services-icon">🫁</div>
-          <h5>Blood Tests with Max Lab</h5>
-          <p>Comprehensive blood work for complete clinical clarity.</p>
+        <div class="col-md-4">
+          <div class="info-card">
+            <div class="service-icon">🥗</div>
+            <h6>Nutrition Counseling</h6>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="container py-5">
-    <h2 class="text-center mb-4">Contact Us</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name">
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email">
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="4"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-      </div>
-      <div class="col-md-6">
-        <h5>Clinic Address</h5>
-        <p>UltraCare Diagnostics & Kids Clinic,Sector 149,Noida, India</p>
-        <h5>Phone</h5>
-        <p>+91-7838923367</p>
-        <h5>Email</h5>
-        <p>contact@clinic.com</p>
-        <h5>Map</h5>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.463970864126!2d77.4760882745019!3d28.435426893005943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc18a7924fd5d%3A0xf2133ab352f4d7ef!2sUltracare%20Diagnostics%20and%20Kids%20Clinic!5e0!3m2!1sen!2sin!4v1748691165856!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       
-      </div>
-    </div>
-  </section>
-
-  <footer class="text-center py-3 bg-dark text-white">
-    &copy; 2025 Ultracare Diagnostics & Kids Clinic. All rights reserved.
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 UltraCare Diagnostics & Kids Clinic</p>
+    <p>Sector 149 Noida | Call: +91‑7838923367</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
