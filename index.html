@@ -118,6 +118,8 @@
             border-radius: 50%;
             border: 4px solid var(--primary-color);
             margin-bottom: 1rem;
+            object-fit: cover;
+            object-position: center;
         }
 
         .doctor-card h5 {
@@ -250,21 +252,21 @@
         <div class="container">
             <h2 class="text-center section-heading">Meet Our Expert Doctors</h2>
             <div class="row justify-content-center g-4">
-                <div class="col-md-5 col-lg-4">
+                <div class="col-md-6 col-lg-5">
                     <div class="doctor-card text-center">
                         <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/drsaab.jpg" alt="Dr. Arun Kr Singh" width="150" height="150" />
                         <h5>Dr. Arun Kr Singh</h5>
-                        <p class="text-muted">MBBS, DCH (Child Specialist)</p>
-                        <p>Consultation Pediatrician and Neonatologist with years of experience in nurturing child health and development.</p>
+                        <p class="text-muted">**MBBS, DCH (Child Specialist)**</p>
+                        <p>Dr. Arun Kr Singh is a highly experienced and compassionate **Consultant Pediatrician and Neonatologist**. With a deep understanding of child health and development, he provides expert care for infants, children, and adolescents. His dedication ensures that every child receives personalized attention, focusing on preventive care, routine vaccinations, and comprehensive treatment for various pediatric conditions. Dr. Singh is committed to nurturing the well-being of the youngest members of your family.</p>
                         <a href="#contact" class="btn btn-sm btn-outline-primary mt-2">Book Appointment</a>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-4">
+                <div class="col-md-6 col-lg-5">
                     <div class="doctor-card text-center">
                         <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/mam.jpg" alt="Dr. Banashree" width="150" height="150" />
                         <h5>Dr. Banashree Gogoi</h5>
-                        <p class="text-muted">MBBS, MD (Radiodiagnosis)</p>
-                        <p>Specializing in advanced diagnostic imaging, providing accurate and timely reports for effective treatment.</p>
+                        <p class="text-muted">**MBBS, MD (Radiodiagnosis)**</p>
+                        <p>Dr. Banashree Gogoi is a distinguished **Radiodiagnosis Specialist** known for her precision and expertise in advanced diagnostic imaging. She plays a crucial role in providing accurate and timely reports for a wide range of medical conditions. Her proficiency in various imaging modalities ensures comprehensive diagnostic clarity, which is vital for effective treatment planning. Dr. Gogoi's commitment to excellence supports our clinic's promise of precise and reliable healthcare services.</p>
                         <a href="#contact" class="btn btn-sm btn-outline-primary mt-2">Book Appointment</a>
                     </div>
                 </div>
@@ -329,42 +331,20 @@
     <section id="contact" class="bg-light py-5">
         <div class="container">
             <h2 class="text-center section-heading">Get in Touch With Us</h2>
-            <div class="row g-5">
-                <div class="col-md-6">
-                    <h4 class="mb-4 text-primary">Send Us a Message</h4>
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Your Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Your Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">Phone Number (Optional)</label>
-                            <input type="tel" class="form-control" id="phone" placeholder="+91-XXXXXXXXXX">
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Your Message</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="How can we help you?" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
-                    </form>
-                </div>
-                <div class="col-md-6 contact-info">
-                    <h4 class="mb-4 text-primary">Clinic Information</h4>
-                    <p><i class="fas fa-map-marker-alt me-2 text-primary"></i> <strong>Address:</strong> UltraCare Diagnostics & Kids Clinic, Sector 149, Noida, India</p>
-                    <p><i class="fas fa-phone me-2 text-primary"></i> <strong>Phone:</strong> <a href="tel:+917838923367" class="text-decoration-none text-dark">+91-7838923367</a></p>
-                    <p><i class="fas fa-envelope me-2 text-primary"></i> <strong>Email:</strong> <a href="mailto:contact@clinic.com" class="text-decoration-none text-dark">contact@clinic.com</a></p>
-                    <p><i class="fas fa-clock me-2 text-primary"></i> <strong>Clinic Hours:</strong></p>
-                    <ul>
+            <div class="row g-5 justify-content-center">
+                <div class="col-md-8 contact-info">
+                    <h4 class="mb-4 text-primary text-center">Clinic Information</h4>
+                    <p class="text-center"><i class="fas fa-map-marker-alt me-2 text-primary"></i> <strong>Address:</strong> UltraCare Diagnostics & Kids Clinic, Sector 149, Noida, India</p>
+                    <p class="text-center"><i class="fas fa-phone me-2 text-primary"></i> <strong>Phone:</strong> <a href="tel:+917838923367" class="text-decoration-none text-dark">+91-7838923367</a></p>
+                    <p class="text-center"><i class="fas fa-envelope me-2 text-primary"></i> <strong>Email:</strong> <a href="mailto:contact@clinic.com" class="text-decoration-none text-dark">contact@clinic.com</a></p>
+                    <p class="text-center"><i class="fas fa-clock me-2 text-primary"></i> <strong>Clinic Hours:</strong></p>
+                    <ul class="list-unstyled text-center">
                         <li>Mon - Fri: 9:00 AM - 7:00 PM</li>
                         <li>Sat: 10:00 AM - 4:00 PM</li>
                         <li>Sun: Closed</li>
                     </ul>
 
-                    <h5 class="mt-4 mb-3 text-primary">Find Us on the Map</h5>
+                    <h5 class="mt-4 mb-3 text-primary text-center">Find Us on the Map</h5>
                     <div class="map-container">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.741695276332!2d77.4093959149028!3d28.4891465824908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfbb1b8022a1f%3A0x7d0a2f7c0a9b8f1c!2sSector%20149%2C%20Noida%2C%20Uttar%20Pradesh%20201308!5e0!3m2!1sen!2sin!4v1678912345678!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -375,7 +355,7 @@
 
     <footer class="text-center py-4">
         <div class="container">
-            <p class="mb-0">&copy; 2025 UltraCare Diagnostics & Kids Clinic. All rights reserved.</p>
+            <p class="mb-0">© 2025 UltraCare Diagnostics & Kids Clinic. All rights reserved.</p>
             <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by [Your Name/Company Name]</p>
         </div>
     </footer>
