@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ULTRACARE DIAGNOSTICS & KIDS CARE CLINIC</title>
+    <title>ULTRACARE DIAGNOSTICS & KIDS CARE CLINIC - Child Specialist & Pediatrician in Sector 149, 150 Noida</title>
+    <meta name="description" content="UltraCare Diagnostics & Kids Clinic: Your trusted child specialist and pediatrician in Sector 149 and 150 Noida. Offering comprehensive pediatric care, advanced diagnostics, and compassionate service for your family's health.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -159,6 +160,50 @@
             margin-bottom: 0.5rem;
         }
 
+        /* Blog Section Styles */
+        .blog-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden; /* Ensures image corners are rounded */
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,.12);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px; /* Fixed height for blog images */
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .blog-card-body {
+            padding: 1.5rem;
+            flex-grow: 1; /* Allows content to push footer to bottom */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card-body h5 {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .blog-card-body p {
+            font-size: 0.95rem;
+            color: var(--secondary-color);
+            flex-grow: 1; /* Allows text to take up available space */
+        }
+
         .contact-info p {
             margin-bottom: 0.75rem;
         }
@@ -198,7 +243,7 @@
             .section-heading {
                 font-size: 2rem;
             }
-            .doctor-card, .services-item {
+            .doctor-card, .services-item, .blog-card {
                 margin-bottom: 1.5rem;
             }
         }
@@ -216,7 +261,7 @@
                     <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#doctors">Our Doctors</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blogs</a></li> <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -224,8 +269,9 @@
 
     <section class="hero d-flex align-items-center justify-content-center">
         <div>
-            <h1>Your Trusted Partner in Health and Wellness</h1>
-            <p>Providing compassionate and comprehensive care for your family.</p>
+            <h1>Your Trusted Child Specialist & Pediatrician in Sector 149 & 150 Noida</h1>
+            <p>Providing compassionate and comprehensive care for your family's health and wellness.</p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-3">Book an Appointment</a>
         </div>
     </section>
 
@@ -235,11 +281,11 @@
         <h2 class="text-center section-heading">About Our Clinic</h2>
         <div class="row align-items-center">
             <div class="col-md-6 order-md-2 text-center mb-4 mb-md-0">
-                <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/clinic_interior.jpg" alt="Clinic Interior" class="img-fluid about-us-img" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,.1);">
+                <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/clinic_interior.jpg" alt="Clinic Interior - UltraCare Diagnostics & Kids Clinic Noida" class="img-fluid about-us-img" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,.1);">
             </div>
             <div class="col-md-6 order-md-1">
                 <h3>Dedicated to Your Family's Health</h3>
-                <p>At UltraCare Diagnostics & Kids Clinic, we are committed to providing exceptional healthcare services with a focus on both advanced diagnostics and specialized pediatric care. Our clinic is built on the principles of compassion, precision, and patient-centric care, ensuring a comfortable and trustworthy environment for every visit.</p>
+                <p>At UltraCare Diagnostics & Kids Clinic, we are proud to be a highly recommended **child specialist** and **pediatrician clinic** serving families across **Sector 149 and Sector 150 Noida**. Our commitment is to provide exceptional healthcare services, with a dual focus on advanced diagnostics for all ages and comprehensive, specialized **pediatric care** for infants, children, and adolescents. Built on the principles of compassion, precision, and patient-centric care, our facility offers a comfortable and trustworthy environment, ensuring peace of mind for every parent seeking a reliable **child doctor in Noida**.</p>
                 <p>We understand the unique needs of growing families and offer a holistic approach to health, from routine check-ups and vaccinations for children to comprehensive diagnostic services for all ages. Our team of experienced medical professionals uses the latest technologies and practices to deliver accurate results and effective treatments.</p>
                 <a href="#services" class="btn btn-outline-primary mt-3">Explore Our Services</a>
             </div>
@@ -254,7 +300,7 @@
             <div class="row justify-content-center g-4">
                 <div class="col-md-6 col-lg-5">
                     <div class="doctor-card text-center">
-                        <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/drsaab.jpg" alt="Dr. Arun Kr Singh" width="150" height="150" />
+                        <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/drsaab.jpg" alt="Dr. Arun Kr Singh - Child Specialist Noida" width="150" height="150" />
                         <h5>Dr. Arun Kr Singh</h5>
                         <p class="text-muted">MBBS, DCH (Child Specialist)</p>
                         <p>Dr. Arun Kr Singh is a highly experienced and compassionate Consultant Pediatrician and Neonatologist with 10 years of experience. He brings a wealth of expertise from his previous roles as a consultant at Safdarjung Hospital, Cloudnine Hospital, and Pratiksha Hospital. With a deep understanding of child health and development, Dr. Singh provides expert care for infants, children, and adolescents. His dedication ensures that every child receives personalized attention, focusing on preventive care, routine vaccinations, and comprehensive treatment for various pediatric conditions.</p>
@@ -263,7 +309,7 @@
                 </div>
                 <div class="col-md-6 col-lg-5">
                     <div class="doctor-card text-center">
-                        <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/mam.jpg" alt="Dr. Banashree" width="150" height="150" />
+                        <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/mam.jpg" alt="Dr. Banashree Gogoi - Radiodiagnosis Specialist Noida" width="150" height="150" />
                         <h5>Dr. Banashree Gogoi</h5>
                         <p class="text-muted">MBBS, MD (Radiodiagnosis)</p>
                         <p>Dr. Banashree Gogoi is a distinguished Radiodiagnosis Specialist known for her precision and expertise in advanced diagnostic imaging. She plays a crucial role in providing accurate and timely reports for a wide range of medical conditions. Her proficiency in various imaging modalities ensures comprehensive diagnostic clarity, which is vital for effective treatment planning. Dr. Gogoi's commitment to excellence supports our clinic's promise of precise and reliable healthcare services.</p>
@@ -290,7 +336,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="services-item text-center">
                         <div class="services-icon"><i class="fas fa-syringe"></i></div>
-                        <h5>Vaccination </h5>
+                        <h5>Vaccination & Immunization</h5>
                         <p>Protecting tiny lives and ensuring family health with routine immunizations and specialized vaccines.</p>
                     </div>
                 </div>
@@ -328,24 +374,66 @@
 
     ---
 
-    <section id="contact" class="bg-light py-5">
+    <section id="blog" class="bg-light py-5">
         <div class="container">
+            <h2 class="text-center section-heading">Our Latest Health Insights & Blogs</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card">
+                        <img src="https://via.placeholder.com/400x200?text=Child+Disease+Prevention" alt="Preventing Common Childhood Diseases" class="img-fluid">
+                        <div class="blog-card-body">
+                            <h5 class="card-title">Understanding & Preventing Common Childhood Diseases</h5>
+                            <p class="card-text">Learn about the most prevalent childhood illnesses, their symptoms, and crucial preventive measures to keep your little ones healthy and strong.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card">
+                        <img src="https://via.placeholder.com/400x200?text=Vaccination+Schedule" alt="Importance of Child Vaccination" class="img-fluid">
+                        <div class="blog-card-body">
+                            <h5 class="card-title">The Essential Guide to Child Vaccinations: Schedule & Benefits</h5>
+                            <p class="card-text">Vaccinations are vital for your child's immunity. Discover the recommended vaccination schedule and how vaccines protect against serious diseases.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card">
+                        <img src="https://via.placeholder.com/400x200?text=Healthy+Kids+Diet" alt="Nutrition for Growing Children" class="img-fluid">
+                        <div class="blog-card-body">
+                            <h5 class="card-title">Nourishing Growth: Essential Nutrition Tips for Healthy Kids</h5>
+                            <p class="card-text">Explore balanced diet plans, essential nutrients, and healthy eating habits to support your child's optimal growth and development.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary btn-lg">View All Blogs</a>
+            </div>
+        </div>
+    </section>
+
+    ---
+
+    <section id="contact" class="py-5"> <div class="container">
             <h2 class="text-center section-heading">Get in Touch With Us</h2>
             <div class="row g-5 justify-content-center">
                 <div class="col-md-8 contact-info">
                     <h4 class="mb-4 text-primary text-center">Clinic Information</h4>
                     <p class="text-center"><i class="fas fa-map-marker-alt me-2 text-primary"></i> <strong>Address:</strong> UltraCare Diagnostics & Kids Clinic, Sector 149, Noida, India</p>
-                    <p class="text-center"><i class="fas fa-phone me-2 text-primary"></i> <strong>Phone:</strong> <a href="tel:+917838923367" class="text-decoration-none text-dark">+91- 9958826779</a></p>
-                    <p class="text-center"><i class="fas fa-envelope me-2 text-primary"></i> <strong>Email:</strong> <a href="mailto:contact@clinic.com" class="text-decoration-none text-dark">ultracarekidsclinic@gmail.com</a></p>
+                    <p class="text-center"><i class="fas fa-phone me-2 text-primary"></i> <strong>Phone:</strong> <a href="tel:+919958826779" class="text-decoration-none text-dark">+91-9958826779</a></p>
+                    <p class="text-center"><i class="fas fa-envelope me-2 text-primary"></i> <strong>Email:</strong> <a href="mailto:ultracarekidsclinic@gmail.com" class="text-decoration-none text-dark">ultracarekidsclinic@gmail.com</a></p>
                     <p class="text-center"><i class="fas fa-clock me-2 text-primary"></i> <strong>Clinic Hours:</strong></p>
                     <ul class="list-unstyled text-center">
                         <li>Mon - Sat: 9:00 AM - 8:00 PM</li>
-                        <li>Sun: 9:00AM -12:00 PM</li>
+                        <li>Sun: 9:00 AM - 12:00 PM</li>
                     </ul>
 
                     <h5 class="mt-4 mb-3 text-primary text-center">Find Us on the Map</h5>
                     <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.463970864126!2d77.4760882745019!3d28.435426893005943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc18a7924fd5d%3A0xf2133ab352f4d7ef!2sUltracare%20Diagnostics%20and%20Kids%20Clinic!5e0!3m2!1sen!2sin!4v1749988739161!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.74108845701!2d77.4475454754964!3d28.48924037574768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf851357a791d%3A0x7d94f291e2b4f91!2sUltraCare%20Diagnostics%20%26%20Kids%20Clinic!5e0!3m2!1sen!2sin!4v1718520336209!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
