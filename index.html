@@ -1,534 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ULTRACARE DIAGNOSTICS & KIDS CARE CLINIC - Child Specialist(Pediatrician) & Radiologist in Sector 150, 149 Noida</title>
-    <meta name="description" content="UltraCare Diagnostics & Kids Clinic: Your trusted Child Specialist(Pediatrician) & Radiologist in Sector 149 and 150 Noida. Offering comprehensive pediatric care, advanced diagnostics, and compassionate service for your family's health, including specialized ultrasounds like KUB, TVS, pregnancy scans, and more.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        :root {
-            --primary-color: #007bff;
-            --secondary-color: #6c757d;
-            --light-bg: #f8f9fa;
-            --dark-bg: #343a40;
-            --text-color: #212529;
-            --white: #ffffff;
-        }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ULTRACARE DIAGNOSTICS & KIDS CARE CLINIC - Child Specialist(Pediatrician) & Radiologist in Sector 150, 149 Noida</title>
+    <meta name="description" content="UltraCare Diagnostics & Kids Clinic: Your trusted Child Specialist(Pediatrician) & Radiologist in Sector 149 and 150 Noida. Offering comprehensive pediatric care, advanced diagnostics, and compassionate service for your family's health, including specialized ultrasounds like KUB, TVS, pregnancy scans, and more.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #007bff; /* A standard blue for medical themes */
+            --secondary-color: #6c757d; /* Grey for supporting text */
+            --light-bg: #f8f9fa;
+            --dark-bg: #343a40;
+            --text-color: #212529;
+            --white: #ffffff;
+        }
 
-        body {
-            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            color: var(--text-color);
-        }
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: var(--text-color);
+        }
 
-        .navbar {
-            box-shadow: 0 2px 4px rgba(0,0,0,.05);
-        }
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,.05);
+        }
 
-        .navbar-brand {
-            font-weight: 700;
-            color: var(--primary-color) !important;
-        }
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color) !important;
+        }
 
-        .nav-link {
-            font-weight: 500;
-            color: var(--text-color) !important;
-            transition: color 0.3s ease;
-        }
+        .nav-link {
+            font-weight: 500;
+            color: var(--text-color) !important;
+            transition: color 0.3s ease;
+        }
 
-        .nav-link:hover {
-            color: var(--primary-color) !important;
-        }
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
 
-        .hero {
-            background-image: linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.7)), url('https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/clinicphoto.webp');
-            background-size: cover;
-            background-position: center;
-            color: var(--white);
-            text-align: center;
-            padding: 6rem 1rem;
-            position: relative;
-            z-index: 1;
-        }
+        .hero {
+            background-image: linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.7)), url('https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/clinicphoto.webp');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            text-align: center;
+            padding: 6rem 1rem;
+            position: relative;
+            z-index: 1;
+        }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.3);
-            z-index: -1;
-        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.3); /* Dark overlay for better text readability */
+            z-index: -1;
+        }
 
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
 
-        .hero p {
-            font-size: 1.5rem;
-            font-weight: 300;
-        }
+        .hero p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
 
-        .section-heading {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 3rem;
-            position: relative;
-            display: inline-block;
-        }
+        .section-heading {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+        }
 
-        .section-heading::after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            bottom: -10px;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background-color: var(--primary-color);
-            border-radius: 2px;
-        }
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
 
-        .about-us img {
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,.1);
-            object-fit: cover;
-        }
+        .about-us img {
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,.1);
+            object-fit: cover;
+        }
 
-        .doctor-card {
-            background-color: var(--white);
-            border-radius: 8px;
-            padding: 2rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 100%;
-        }
+        .doctor-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%; /* Ensure cards are same height */
+        }
 
-        .doctor-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 20px rgba(0,0,0,.12);
-        }
+        .doctor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,.12);
+        }
 
-        .doctor-card img {
-            border-radius: 50%;
-            border: 4px solid var(--primary-color);
-            margin-bottom: 1rem;
-            object-fit: cover;
-            object-position: center;
-        }
+        .doctor-card img {
+            border-radius: 50%;
+            border: 4px solid var(--primary-color);
+            margin-bottom: 1rem;
+            object-fit: cover;
+            object-position: center;
+        }
 
-        .doctor-card h5 {
-            color: var(--primary-color);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
+        .doctor-card h5 {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
 
-        .doctor-card p {
-            font-size: 0.95rem;
-            color: var(--secondary-color);
-        }
+        .doctor-card p {
+            font-size: 0.95rem;
+            color: var(--secondary-color);
+        }
 
-        .services-item {
-            background-color: var(--white);
-            border-radius: 8px;
-            padding: 2rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 100%;
-        }
+        .services-item {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%; /* Ensure items are same height */
+        }
 
-        .services-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 20px rgba(0,0,0,.12);
-        }
+        .services-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,.12);
+        }
 
-        .services-icon {
-            font-size: 3rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
+        .services-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
 
-        .services-item h5 {
-            font-weight: 600;
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
+        .services-item h5 {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
 
-        .blog-card {
-            background-color: var(--white);
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
+        /* Blog Section Styles */
+        .blog-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden; /* Ensures image corners are rounded */
+        }
 
-        .blog-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 20px rgba(0,0,0,.12);
-        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,.12);
+        }
 
-        .blog-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-        }
+        .blog-card img {
+            width: 100%;
+            height: 200px; /* Fixed height for blog images */
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
 
-        .blog-card-body {
-            padding: 1.5rem;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
+        .blog-card-body {
+            padding: 1.5rem;
+            flex-grow: 1; /* Allows content to push footer to bottom */
+            display: flex;
+            flex-direction: column;
+        }
 
-        .blog-card-body h5 {
-            color: var(--primary-color);
-            font-weight: 600;
-            margin-bottom: 0.75rem;
-        }
+        .blog-card-body h5 {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
 
-        .blog-card-body p {
-            font-size: 0.95rem;
-            color: var(--secondary-color);
-            flex-grow: 1;
-        }
+        .blog-card-body p {
+            font-size: 0.95rem;
+            color: var(--secondary-color);
+            flex-grow: 1; /* Allows text to take up available space */
+        }
 
-        .contact-info p {
-            margin-bottom: 0.75rem;
-        }
+        .contact-info p {
+            margin-bottom: 0.75rem;
+        }
 
-        .contact-info strong {
-            color: var(--primary-color);
-        }
+        .contact-info strong {
+            color: var(--primary-color);
+        }
 
-        .map-container {
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,.1);
-            height: 450px;
-        }
+        .map-container {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,.1);
+            height: 450px; /* Consistent map height */
+        }
 
-        .map-container iframe {
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
 
-        footer {
-            background-color: var(--dark-bg);
-            color: var(--white);
-            padding: 2rem 0;
-            font-size: 0.9rem;
-        }
+        footer {
+            background-color: var(--dark-bg);
+            color: var(--white);
+            padding: 2rem 0;
+            font-size: 0.9rem;
+        }
 
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            .hero p {
-                font-size: 1.2rem;
-            }
-            .section-heading {
-                font-size: 2rem;
-            }
-            .doctor-card, .services-item, .blog-card {
-                margin-bottom: 1.5rem;
-            }
-        }
-    </style>
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .section-heading {
+                font-size: 2rem;
+            }
+            .doctor-card, .services-item, .blog-card {
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">ULTRACARE DIAGNOSTICS & KIDS CLINIC</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#doctors">Our Doctors</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog">Blogs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">ULTRACARE DIAGNOSTICS & KIDS CLINIC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#doctors">Our Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <section class="hero d-flex align-items-center justify-content-center">
-        <div>
-            <h1>Your Trusted Child Specialist(Pediatrician) & Radiologist in Sector 150 & 149 Noida</h1>
-            <p>Providing compassionate and comprehensive care for your family's health and wellness.</p>
-            <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book an Appointment</button>
-        </div>
-    </section>
+    <section class="hero d-flex align-items-center justify-content-center">
+        <div>
+            <h1>Your Trusted Child Specialist(Pediatrician) & Radiologist in Sector 150 & 149 Noida</h1>
+            <p>Providing compassionate and comprehensive care for your family's health and wellness.</p>
+            <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                Book an Appointment
+            </button>
+        </div>
+    </section>
 
-    ---
+    ---
 
-    <section id="about" class="container py-5">
-        <h2 class="text-center section-heading">About Our Clinic</h2>
-        <div class="row align-items-center">
-            <div class="col-md-6 order-md-2 text-center mb-4 mb-md-0">
-                <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/clinic_interior.jpg" alt="Clinic Interior - UltraCare Diagnostics & Kids Clinic Noida" class="img-fluid about-us-img" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,.1);">
-            </div>
-            <div class="col-md-6 order-md-1">
-                <h3>Dedicated to Your Family's Health</h3>
-                <p>At UltraCare Diagnostics & Kids Clinic, we are proud to be a highly recommended **child specialist** and **pediatrician clinic** serving families across **Sector 149 and Sector 150 Noida**. Our commitment is to provide exceptional healthcare services, with a dual focus on advanced diagnostics for all ages and comprehensive, specialized **pediatric care** for infants, children, and adolescents. Built on the principles of compassion, precision, and patient-centric care, our facility offers a comfortable and trustworthy environment, ensuring peace of mind for every parent seeking a reliable **child doctor in Noida**.</p>
-                <p>We understand the unique needs of growing families and offer a holistic approach to health, from routine check-ups and vaccinations for children to comprehensive diagnostic services for all ages. Our team of experienced medical professionals uses the latest technologies and practices to deliver accurate results and effective treatments.</p>
-                <a href="#services" class="btn btn-outline-primary mt-3">Explore Our Services</a>
-            </div>
-        </div>
-    </section>
+    <section id="about" class="container py-5">
+        <h2 class="text-center section-heading">About Our Clinic</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6 order-md-2 text-center mb-4 mb-md-0">
+                <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/clinic_interior.jpg" alt="Clinic Interior - UltraCare Diagnostics & Kids Clinic Noida" class="img-fluid about-us-img" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,.1);">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h3>Dedicated to Your Family's Health</h3>
+                <p>At UltraCare Diagnostics & Kids Clinic, we are proud to be a highly recommended **child specialist** and **pediatrician clinic** serving families across **Sector 149 and Sector 150 Noida**. Our commitment is to provide exceptional healthcare services, with a dual focus on advanced diagnostics for all ages and comprehensive, specialized **pediatric care** for infants, children, and adolescents. Built on the principles of compassion, precision, and patient-centric care, our facility offers a comfortable and trustworthy environment, ensuring peace of mind for every parent seeking a reliable **child doctor in Noida**.</p>
+                <p>We understand the unique needs of growing families and offer a holistic approach to health, from routine check-ups and vaccinations for children to comprehensive diagnostic services for all ages. Our team of experienced medical professionals uses the latest technologies and practices to deliver accurate results and effective treatments.</p>
+                <a href="#services" class="btn btn-outline-primary mt-3">Explore Our Services</a>
+            </div>
+        </div>
+    </section>
 
-    ---
+    ---
 
-    <section id="doctors" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center section-heading">Meet Our Expert Doctors</h2>
-            <div class="row justify-content-center g-4">
-                <div class="col-md-6 col-lg-5">
-                    <div class="doctor-card text-center">
-                        <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/drsaab.jpg" alt="Dr. Arun Kr Singh - Child Specialist Noida" width="150" height="150" />
-                        <h5>Dr. Arun Kr Singh</h5>
-                        <p class="text-muted">MBBS, DCH (Child Specialist)</p>
-                        <p>Dr. Arun Kr Singh is a highly experienced and compassionate Consultant Pediatrician and Neonatologist with 10 years of experience. He brings a wealth of expertise from his previous roles as a consultant at Safdarjung Hospital, Cloudnine Hospital, and Pratiksha Hospital. With a deep understanding of child health and development, Dr. Singh provides expert care for infants, children, and adolescents. His dedication ensures that every child receives personalized attention, focusing on preventive care, routine vaccinations, and comprehensive treatment for various pediatric conditions.</p>
-                        <a href="#contact" class="btn btn-sm btn-outline-primary mt-2">Book Appointment</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-5">
-                    <div class="doctor-card text-center">
-                        <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/mam.jpg" alt="Dr. Banashree Gogoi - Radiodiagnosis Specialist Noida" width="150" height="150" />
-                        <h5>Dr. Banashree Gogoi</h5>
-                        <p class="text-muted">MBBS, MD (Radiodiagnosis)</p>
-                        <p>Dr. Banashree Gogoi is a distinguished Radiodiagnosis Specialist known for her precision and expertise in advanced diagnostic imaging. She plays a crucial role in providing accurate and timely reports for a wide range of medical conditions. Her proficiency in various imaging modalities ensures comprehensive diagnostic clarity, which is vital for effective treatment planning. Dr. Gogoi's commitment to excellence supports our clinic's promise of precise and reliable healthcare services.</p>
-                        <a href="#contact" class="btn btn-sm btn-outline-primary mt-2">Book Appointment</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="doctors" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center section-heading">Meet Our Expert Doctors</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-6 col-lg-5">
+                    <div class="doctor-card text-center">
+                        <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/drsaab.jpg" alt="Dr. Arun Kr Singh - Child Specialist Noida" width="150" height="150" />
+                        <h5>Dr. Arun Kr Singh</h5>
+                        <p class="text-muted">MBBS, DCH (Child Specialist)</p>
+                        <p>Dr. Arun Kr Singh is a highly experienced and compassionate Consultant Pediatrician and Neonatologist with 10 years of experience. He brings a wealth of expertise from his previous roles as a consultant at Safdarjung Hospital, Cloudnine Hospital, and Pratiksha Hospital. With a deep understanding of child health and development, Dr. Singh provides expert care for infants, children, and adolescents. His dedication ensures that every child receives personalized attention, focusing on preventive care, routine vaccinations, and comprehensive treatment for various pediatric conditions.</p>
+                        <button type="button" class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                            Book Appointment
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="doctor-card text-center">
+                        <img src="https://raw.githubusercontent.com/Ultracarekidsclinic/clinic/refs/heads/main/mam.jpg" alt="Dr. Banashree Gogoi - Radiodiagnosis Specialist Noida" width="150" height="150" />
+                        <h5>Dr. Banashree Gogoi</h5>
+                        <p class="text-muted">MBBS, MD (Radiodiagnosis)</p>
+                        <p>Dr. Banashree Gogoi is a distinguished Radiodiagnosis Specialist known for her precision and expertise in advanced diagnostic imaging. She plays a crucial role in providing accurate and timely reports for a wide range of medical conditions. Her proficiency in various imaging modalities ensures comprehensive diagnostic clarity, which is vital for effective treatment planning. Dr. Gogoi's commitment to excellence supports our clinic's promise of precise and reliable healthcare services.</p>
+                        <button type="button" class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                            Book Appointment
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    ---
+    ---
 
-    <section id="services" class="py-5">
-        <div class="container">
-            <h2 class="text-center section-heading">Our Comprehensive Services</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="services-item text-center">
-                        <div class="services-icon"><i class="fas fa-stethoscope"></i></div>
-                        <h5>OPD Consultation</h5>
-                        <p>Comprehensive health consultations for general ailments and specialized care needs.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="services-item text-center">
-                        <div class="services-icon"><i class="fas fa-syringe"></i></div>
-                        <h5>Vaccination & Immunization</h5>
-                        <p>Protecting tiny lives and ensuring family health with routine immunizations and specialized vaccines.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="services-item text-center">
-                        <div class="services-icon"><i class="fas fa-lungs"></i></div>
-                        <h5>Nebulization Therapy</h5>
-                        <p>Effective respiratory treatment for conditions like asthma and bronchitis, ensuring clear breathing.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="services-item text-center">
-                        <div class="services-icon"><i class="fas fa-baby"></i></div>
-                        <h5>Newborn & Infant Care</h5>
-                        <p>Nurturing every heartbeat from the very first, providing expert care and guidance for new parents.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="services-item text-center">
-                        <div class="services-icon"><i class="fas fa-apple-alt"></i></div>
-                        <h5>Nutrition & Growth Monitoring</h5>
-                        <p>Personalized advice on healthy living, balanced nutrition, and chronic disease management.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="services-item text-center">
-                        <div class="services-icon"><i class="fas fa-flask"></i></div>
-                        <h5>Advanced Blood Tests (Max Lab)</h5>
-                        <p>Comprehensive blood work for complete clinical clarity, partnered with Max Lab for accurate diagnostics.</p>
-                    </div>
-                </div>
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-heading">Our Comprehensive Services</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-stethoscope"></i></div>
+                        <h5>OPD Consultation</h5>
+                        <p>Comprehensive health consultations for general ailments and specialized care needs.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-syringe"></i></div>
+                        <h5>Vaccination & Immunization</h5>
+                        <p>Protecting tiny lives and ensuring family health with routine immunizations and specialized vaccines.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-lungs"></i></div>
+                        <h5>Nebulization Therapy</h5>
+                        <p>Effective respiratory treatment for conditions like asthma and bronchitis, ensuring clear breathing.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-baby"></i></div>
+                        <h5>Newborn & Infant Care</h5>
+                        <p>Nurturing every heartbeat from the very first, providing expert care and guidance for new parents.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-apple-alt"></i></div>
+                        <h5>Nutrition & Growth Monitoring</h5>
+                        <p>Personalized advice on healthy living, balanced nutrition, and chronic disease management.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-flask"></i></div>
+                        <h5>Advanced Blood Tests (Max Lab)</h5>
+                        <p>Comprehensive blood work for complete clinical clarity, partnered with Max Lab for accurate diagnostics.</p>
+                    </div>
+                </div>
+                <div class="col-12 mt-4">
+                    <h3 class="text-center text-primary mb-4">Advanced Diagnostic Ultrasounds</h3>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-x-ray"></i></div>
+                        <h5>Whole Abdomen, KUB, Pelvis Ultrasounds</h5>
+                        <p>Detailed ultrasound imaging of the abdomen, kidneys, ureters, bladder, and pelvis for comprehensive diagnostic insights.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-venus"></i></div>
+                        <h5>Transvaginal Sonography (TVS)</h5>
+                        <p>Specialized internal ultrasound for detailed imaging of the female reproductive organs, crucial for gynecological assessments.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-baby-carriage"></i></div>
+                        <h5>All Pregnancy Ultrasounds (Level I, II, Growth Monitoring, BPP)</h5>
+                        <p>Comprehensive ultrasound scans throughout pregnancy, including anomaly scans, growth monitoring, and biophysical profiles.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h5>All Doppler Ultrasounds</h5>
+                        <p>Advanced Doppler studies to assess blood flow in various parts of the body, including fetal and vascular Doppler.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-microscope"></i></div>
+                        <h5>Small Part High-Resolution Ultrasound</h5>
+                        <p>Precise imaging for smaller body parts such as the neck, thyroid, and breast, for detailed analysis and early detection.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-microscope"></i></div>
+                        <h5>Follicular Monitoring</h5>
+                        <p>Serial ultrasound examinations to monitor the development of ovarian follicles, crucial for fertility treatments.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-child"></i></div>
+                        <h5>Paediatric Ultrasound including Brain</h5>
+                        <p>Specialized ultrasound services tailored for children, including scans of the brain and other organs, for gentle and accurate diagnosis.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item text-center">
+                        <div class="services-icon"><i class="fas fa-procedures"></i></div>
+                        <h5>Ultrasound-Guided Procedures</h5>
+                        <p>Precise and safe procedures such as FNAC, biopsy, and aspiration, performed under real-time ultrasound guidance for accuracy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="col-12 mt-4">
-                    <h3 class="text-center text-primary mb-4">Advanced Diagnostic Ultrasounds</h3>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="services-item text-center">
-                        <div class="services-icon"><i class="fas fa-x-ray"></i></div>
-                        <h5>Whole Abdomen, KUB, Pelvis Ultrasounds</h5>
-                        <p>Detailed ultrasound imaging of the abdomen, kidneys, ureters, bladder, and pelvis for comprehensive diagnostic insights.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="services-item text-center">
-                        <div class="services-icon"><i class="fas fa-venus"></i></div>
-                        <h5>Transvaginal Sonography (TVS)</h5>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="services-item text-center">
-                        <div class="services-icon"><i class="fas fa-baby-carriage"></i></div>
-                        <h5>All Pregnancy Ultrasounds (Level I, II, Growth Monitoring, BPP)</h5>
-                        <p>Comprehensive ultrasound scans throughout pregnancy, including anomaly scans, growth monitoring, and biophysical profiles.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="services-item text-center">
-                        <div class="services-icon"><i class="fas fa-heartbeat"></i></div>
-                        <h5>All Doppler Ultrasounds</h5>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="services-item text-center">
-                        <div class="services-icon"><i class="fas fa-microscope"></i></div>
-                        <h5>Small Part High-Resolution Ultrasound</h5>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="services-item text-center">
-                        <div class="services-icon"><i class="fas fa-microscope"></i></div>
-                        <h5>Follicular Monitoring</h5>
-                    </div>
-                </div>
-                 <div class="col-md-6 col-lg-4">
-                    <div class="services-item text-center">
-                        <div class="services-icon"><i class="fas fa-child"></i></div>
-                        <h5>Paediatric Ultrasound including Brain</h5>
-                    </div>
-                </div>
-                 <div class="col-md-6 col-lg-4">
-                    <div class="services-item text-center">
-                        <div class="services-icon"><i class="fas fa-procedures"></i></div>
-                        <h5>Ultrasound-Guided Procedures</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    ---
 
-    ---
+    <section id="blog" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center section-heading">Our Latest Health Insights & Blogs</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card">
+                        <img src="https://via.placeholder.com/400x200?text=Child+Disease+Prevention" alt="Preventing Common Childhood Diseases" class="img-fluid">
+                        <div class="blog-card-body">
+                            <h5 class="card-title">Understanding & Preventing Common Childhood Diseases</h5>
+                            <p class="card-text">Learn about the most prevalent childhood illnesses, their symptoms, and crucial preventive measures to keep your little ones healthy and strong.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card">
+                        <img src="https://via.placeholder.com/400x200?text=Vaccination+Schedule" alt="Importance of Child Vaccination" class="img-fluid">
+                        <div class="blog-card-body">
+                            <h5 class="card-title">The Essential Guide to Child Vaccinations: Schedule & Benefits</h5>
+                            <p class="card-text">Vaccinations are vital for your child's immunity. Discover the recommended vaccination schedule and how vaccines protect against serious diseases.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card">
+                        <img src="https://via.placeholder.com/400x200?text=Healthy+Kids+Diet" alt="Nutrition for Growing Children" class="img-fluid">
+                        <div class="blog-card-body">
+                            <h5 class="card-title">Nourishing Growth: Essential Nutrition Tips for Healthy Kids</h5>
+                            <p class="card-text">Explore balanced diet plans, essential nutrients, and healthy eating habits to support your child's optimal growth and development.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary btn-lg">View All Blogs</a>
+            </div>
+        </div>
+    </section>
 
-    <section id="blog" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center section-heading">Our Latest Health Insights & Blogs</h2>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-6 col-lg-4">
-                    <div class="blog-card">
-                        <img src="https://via.placeholder.com/400x200?text=Child+Disease+Prevention" alt="Preventing Common Childhood Diseases" class="img-fluid">
-                        <div class="blog-card-body">
-                            <h5 class="card-title">Understanding & Preventing Common Childhood Diseases</h5>
-                            <p class="card-text">Learn about the most prevalent childhood illnesses, their symptoms, and crucial preventive measures to keep your little ones healthy and strong.</p>
-                            <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Read More</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="blog-card">
-                        <img src="https://via.placeholder.com/400x200?text=Vaccination+Schedule" alt="Importance of Child Vaccination" class="img-fluid">
-                        <div class="blog-card-body">
-                            <h5 class="card-title">The Essential Guide to Child Vaccinations: Schedule & Benefits</h5>
-                            <p class="card-text">Vaccinations are vital for your child's immunity. Discover the recommended vaccination schedule and how vaccines protect against serious diseases.</p>
-                            <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Read More</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="blog-card">
-                        <img src="https://via.placeholder.com/400x200?text=Healthy+Kids+Diet" alt="Nutrition for Growing Children" class="img-fluid">
-                        <div class="blog-card-body">
-                            <h5 class="card-title">Nourishing Growth: Essential Nutrition Tips for Healthy Kids</h5>
-                            <p class="card-text">Explore balanced diet plans, essential nutrients, and healthy eating habits to support your child's optimal growth and development.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-5">
-                <a href="#" class="btn btn-primary btn-lg">View All Blogs</a>
-            </div>
-        </div>
-    </section>
+    ---
 
-    ---
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-heading">Get in Touch With Us</h2>
+            <div class="row g-5 justify-content-center">
+                <div class="col-md-8 contact-info">
+                    <h4 class="mb-4 text-primary text-center">Clinic Information</h4>
+                    <p class="text-center"><i class="fas fa-map-marker-alt me-2 text-primary"></i> <strong>Address:</strong> UltraCare Diagnostics & Kids Clinic, Sector 149, Noida, India</p>
+                    <p class="text-center"><i class="fas fa-phone me-2 text-primary"></i> <strong>Phone:</strong> <a href="tel:+919958826779" class="text-decoration-none text-dark">+91-9958826779</a></p>
+                    <p class="text-center"><i class="fas fa-envelope me-2 text-primary"></i> <strong>Email:</strong> <a href="mailto:ultracarekidsclinic@gmail.com" class="text-decoration-none text-dark">ultracarekidsclinic@gmail.com</a></p>
+                    <p class="text-center"><i class="fas fa-clock me-2 text-primary"></i> <strong>Clinic Hours:</strong></p>
+                    <ul class="list-unstyled text-center">
+                        <li>Mon - Sat: 9:00 AM - 8:00 PM</li>
+                        <li>Sun: 9:00 AM - 12:00 PM</li>
+                    </ul>
 
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center section-heading">Get in Touch With Us</h2>
-            <div class="row g-5 justify-content-center">
-                <div class="col-md-8 contact-info">
-                    <h4 class="mb-4 text-primary text-center">Clinic Information</h4>
-                    <p class="text-center"><i class="fas fa-map-marker-alt me-2 text-primary"></i> <strong>Address:</strong> UltraCare Diagnostics & Kids Clinic, Sector 149, Noida, India</p>
-                    <p class="text-center"><i class="fas fa-phone me-2 text-primary"></i> <strong>Phone:</strong> <a href="tel:+919958826779" class="text-decoration-none text-dark">+91-9958826779</a></p>
-                    <p class="text-center"><i class="fas fa-envelope me-2 text-primary"></i> <strong>Email:</strong> <a href="mailto:ultracarekidsclinic@gmail.com" class="text-decoration-none text-dark">ultracarekidsclinic@gmail.com</a></p>
-                    <p class="text-center"><i class="fas fa-clock me-2 text-primary"></i> <strong>Clinic Hours:</strong></p>
-                    <ul class="list-unstyled text-center">
-                        <li>Mon - Sat: 9:00 AM - 8:00 PM</li>
-                        <li>Sun: 9:00 AM - 12:00 PM</li>
-                    </ul>
+                    <h5 class="mt-4 mb-3 text-primary text-center">Find Us on the Map</h5>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.463970864126!2d77.4760882745019!3d28.435426893005943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc18a7924fd5d%3A0xf2133ab352f4d7ef!2sUltracare%20Diagnostics%20and%20Kids%20Clinic!5e0!3m2!1sen!2sin!4v1749988739161!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <h5 class="mt-4 mb-3 text-primary text-center">Find Us on the Map</h5>
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.463970864126!2d77.4760882745019!3d28.435426893005943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc18a7924fd5d%3A0xf2133ab352f4d7ef!2sUltracare%20Diagnostics%20and%20Kids%20Clinic!5e0!3m2!1sen!2sin!4v1749988739161!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <footer class="text-center py-4">
+        <div class="container">
+            <p class="mb-0">© 2025 UltraCare Diagnostics & Kids Clinic. All rights reserved.</p>
+        </div>
+    </footer>
 
-    <footer class="text-center py-4">
-        <div class="container">
-            <p class="mb-0">© 2025 UltraCare Diagnostics & Kids Clinic. All rights reserved.</p>
-        </div>
-    </footer>
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="appointmentModalLabel">Book Your Appointment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="YOUR_FORMSPREE_SMS_ENDPOINT_URL" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="+91-XXXXXXXXXX" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="appointmentDate" class="form-label">Preferred Date</label>
+                            <input type="date" class="form-control" id="appointmentDate" name="appointmentDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Reason for Appointment</label>
+                            <textarea class="form-control" id="message" name="message" rows="3" placeholder="e.g., General check-up, Vaccination, etc." required></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Submit Appointment Request</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="appointmentModalLabel">Book an Appointment</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="appointmentForm" action="process_booking.php" method="POST">
-                        <div class="mb-3">
-                            <label for="patientName" class="form-label">Patient Name</label>
-                            <input type="text" class="form-control" id="patientName" name="patientName" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="mobileNumber" class="form-label">Mobile Number</label>
-                            <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" title="Please enter a 10-digit mobile number" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="age" class="form-label">Age</label>
-                            <input type="number" class="form-control" id="age" name="age" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary">Book Appointment</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
